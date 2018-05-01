@@ -19,84 +19,76 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="First name"
+        android:text="Mobile No."
         android:textColor="#CDDEEE"
         android:textIsSelectable="false"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/firstname"
+        android:id="@+id/mobile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#CDDEEE"
+        android:inputType="phone"
         android:textSize="30sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Last name"
+        android:text="Blood Grooup"
         android:textColor="#CDDEEE"
         android:textIsSelectable="false"
         android:textSize="20sp"/>
 
-    <EditText
-        android:id="@+id/lastname"
+    <Spinner
+        android:id="@+id/blood"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#CDDEEE"
-        android:textSize="30sp" />
+        android:padding="10dp"
+        android:textSize="50sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="Last Donation (YYYY/MM/DD) "
         android:textColor="#CDDEEE"
         android:textIsSelectable="false"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#CDDEEE"
-        android:inputType="textEmailAddress"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="#CDDEEE"
-        android:textIsSelectable="false"
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/password2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:textColor="#CDDEEE"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Date of Birth"
-        android:textColor="#CDDEEE"
-        android:textIsSelectable="false"
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/dateOfBirth"
+        android:id="@+id/lastdonation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date" />
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"/>
+        android:text="No. of Donation"
+        android:textColor="#CDDEEE"
+        android:textIsSelectable="false"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/no_of_donation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+    
+    <TextView
+        android:id="@+id/errors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"/>
 
 
 </LinearLayout>

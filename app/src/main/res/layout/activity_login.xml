@@ -18,8 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Phone Number"
-        android:inputType="phone"
+        android:text="Mobile Number (+880)"
         android:textColor="#CDDEEE"
         android:textIsSelectable="false"
         android:textSize="20sp"/>
@@ -29,6 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#CDDEEE"
+        android:inputType="phone"
+        android:singleLine="true"
         android:textSize="30sp" />
 
     <TextView
@@ -44,16 +45,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:singleLine="true"
         android:textColor="#CDDEEE"
         android:textSize="30sp" />
 
-    <TextView
+    <!--TextView
         android:id="@+id/forgot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="*Forgot Password ?? "
         android:textColor="@color/colorPrimary"
-        android:visibility="visible"/>
+        android:visibility="visible"/-->
 
 
     <TextView
