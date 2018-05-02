@@ -13,8 +13,7 @@ public class InfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_info);
         Button back=findViewById(R.id.back);
         back.setOnClickListener(v->{
-            Intent i=new Intent(v.getContext(), HomeActivity.class);
-            startActivity(i);
+            finish();
         });
     }
 }

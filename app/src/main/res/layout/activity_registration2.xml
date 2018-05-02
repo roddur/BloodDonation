@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mobile No."
+        android:text="Mobile No (+880)"
         android:textColor="#CDDEEE"
         android:textIsSelectable="false"
         android:textSize="20sp"/>

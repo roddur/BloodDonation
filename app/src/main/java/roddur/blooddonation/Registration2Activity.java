@@ -51,12 +51,16 @@ public class Registration2Activity extends AppCompatActivity {
                     replaceAll(Pattern.quote("/"),"-");
             String no_of_donation = ((EditText) findViewById(R.id.no_of_donation)).getText().toString();
             TextView error=findViewById(R.id.errors);
-            if(mobile.equals("") || blood_group.equals("") || last_donation.equals("") || no_of_donation.equals("")){
+            if(mobile.equals("") || blood_group.equals("") || last_donation.equals("")){
                 error.setText("*Some of the fields are empty");
                 error.setVisibility(View.VISIBLE);
                 return;
-            } else if(!(last_donation.matches("([0-9]{4})-([0-9]{2})-([0-9]{2})"))){
+            } else if(!last_donation.equals("0") && !(last_donation.matches("([0-9]{4})-([0-9]{2})-([0-9]{2})"))){
                 error.setText("*Date format is wrong");
+                error.setVisibility(View.VISIBLE);
+                return;
+            } else if(mobile.length()!=10){
+                error.setText("*Mobile numbers must be of 10 characters");
                 error.setVisibility(View.VISIBLE);
                 return;
             }

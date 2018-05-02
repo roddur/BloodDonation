@@ -2,6 +2,7 @@ package roddur.blooddonation;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -102,9 +103,17 @@ public class SearchActivity extends AppCompatActivity {
                                         LinearLayout results = findViewById(R.id.results);
                                         TextView tv = new TextView(SearchActivity.this);
                                         tv.setText(firstname + " " + lastname);
+                                        tv.setTextColor(Color.WHITE);
                                         results.addView(tv);
                                         TextView tv2 = new TextView(SearchActivity.this);
                                         tv2.setText(mobile);
+                                        tv2.setTextColor(Color.WHITE);
+                                        tv2.setOnClickListener(v->{
+                                            Intent intent=new Intent(Intent.ACTION_DIAL,
+                                                    Uri.fromParts("tel", ((TextView)v).getText().toString(),
+                                                            null));
+                                            startActivity(intent);
+                                        });
                                         results.addView(tv2);
                                         View v = new View(SearchActivity.this);
                                         v.setLayoutParams(new LinearLayout.LayoutParams(
