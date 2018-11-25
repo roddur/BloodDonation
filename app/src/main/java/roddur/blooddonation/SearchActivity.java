@@ -96,7 +96,7 @@ public class SearchActivity extends AppCompatActivity {
                                     String firstname = data.getString("firstname");
                                     String lastname = data.getString("lastname");
                                     String mobile = data.getString("mobile");
-                                    //String blood_group=data.getString("blood_group");
+                                    String hospital=data.getString("hospital");
                                     //String no_of_donation=data.getString("no_of_donation");
 
                                     runOnUiThread(() -> {
@@ -108,6 +108,10 @@ public class SearchActivity extends AppCompatActivity {
                                         TextView tv2 = new TextView(SearchActivity.this);
                                         tv2.setText(mobile);
                                         tv2.setTextColor(Color.WHITE);
+                                        TextView tv3 = new TextView(SearchActivity.this);
+                                        tv3.setText("Preferred Hospital : " + hospital);
+                                        tv3.setTextColor(Color.WHITE);
+                                        results.addView(tv3);
                                         tv2.setOnClickListener(v->{
                                             Intent intent=new Intent(Intent.ACTION_DIAL,
                                                     Uri.fromParts("tel", ((TextView)v).getText().toString(),

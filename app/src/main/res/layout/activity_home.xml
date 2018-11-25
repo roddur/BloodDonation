@@ -11,177 +11,196 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="228dp"
-        android:layout_marginTop="229dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="18dp"
         android:text="Last Donation :"
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/dname" />
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/dlastdonation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="0dp"
-        android:layout_height="29dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="13dp"
         android:text="Email : "
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBaseline_toBaselineOf="@+id/demail"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/demail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dblood" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
         android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
         android:text="Mobile No. : "
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBaseline_toBaselineOf="@+id/dmobile"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5" />
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/dmobile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dname"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="2dp"
-        android:text="No. of Donations :"
-        android:textSize="14dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="77dp"
+        android:text="Preferred Hospital :"
         android:textColor="#CDDEEE"
-        app:layout_constraintBottom_toBottomOf="@+id/dnoofdonations"
-        app:layout_constraintEnd_toEndOf="@+id/search_blood"
-        app:layout_constraintStart_toStartOf="@+id/update_donation"
-        app:layout_constraintTop_toTopOf="@+id/dnoofdonations" />
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/update_donation"
+        app:layout_constraintEnd_toStartOf="@+id/dhospital"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/dname"
         android:layout_width="199dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="26dp"
-        android:layout_marginStart="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="25dp"
+        android:layout_marginBottom="26dp"
         android:text="TextView"
-        android:textColor="#CDDEEE"
         android:textAlignment="center"
+        android:textColor="#CDDEEE"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dmobile"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/dmobile"
-        android:layout_width="144dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="93dp"
-        android:textColor="#CDDEEE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
         android:text="TextView"
+        android:textColor="#CDDEEE"
         android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/dblood"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/dname" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="0dp"
-        android:layout_height="29dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="28dp"
         android:text="Blood Group: "
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBaseline_toBaselineOf="@+id/dblood"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dblood"
+        app:layout_constraintEnd_toStartOf="@+id/dblood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dblood" />
 
     <Button
         android:id="@+id/search_blood"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:layout_marginStart="42dp"
+        android:layout_marginEnd="26dp"
         android:text="Search Blood"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/history"
+        app:layout_constraintEnd_toStartOf="@+id/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_donation" />
 
     <Button
         android:id="@+id/update_donation"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+
+        android:layout_marginEnd="26dp"
         android:layout_marginBottom="13dp"
         android:text="Update Donation_Date"
-
         app:layout_constraintBottom_toTopOf="@+id/search_blood"
-        app:layout_constraintStart_toStartOf="@+id/search_blood" />
+        app:layout_constraintEnd_toStartOf="@+id/info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="28dp"
         android:text="Logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_blood"
+        app:layout_constraintTop_toBottomOf="@+id/info" />
 
     <TextView
         android:id="@+id/dblood"
         android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="149dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginTop="148dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
         android:text="TextView"
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBottom_toBottomOf="@+id/dnoofdonations"
-        app:layout_constraintEnd_toEndOf="@+id/dmobile"
-        app:layout_constraintStart_toStartOf="@+id/demail"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/dmobile" />
 
     <TextView
         android:id="@+id/dlastdonation"
         android:layout_width="0dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="79dp"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="53dp"
         android:text="TextView"
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBottom_toTopOf="@+id/info"
-        app:layout_constraintEnd_toEndOf="@+id/dnoofdonations"
-        app:layout_constraintStart_toStartOf="@+id/dnoofdonations"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dhospital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/dblood" />
 
     <TextView
-        android:id="@+id/dnoofdonations"
+        android:id="@+id/dhospital"
         android:layout_width="0dp"
         android:layout_height="29dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginEnd="52dp"
         android:text="TextView"
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintEnd_toEndOf="@+id/info"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textSize="14dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/demail"
         android:layout_width="0dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="56dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="45dp"
         android:text="TextView"
-        android:textSize="14dp"
         android:textColor="#CDDEEE"
-        app:layout_constraintBottom_toBottomOf="@+id/dlastdonation"
-        app:layout_constraintEnd_toEndOf="@+id/info"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/dblood" />
 
@@ -189,9 +208,22 @@
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
         android:text="Info"
-        app:layout_constraintBottom_toTopOf="@+id/logout"
-        app:layout_constraintEnd_toEndOf="@+id/logout" />
+        app:layout_constraintBottom_toBottomOf="@+id/update_donation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/update_donation" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="26dp"
+        android:text="History"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_blood"
+        app:layout_constraintTop_toBottomOf="@+id/search_blood" />
 </android.support.constraint.ConstraintLayout>

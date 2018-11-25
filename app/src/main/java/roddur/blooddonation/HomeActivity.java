@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
     public static String user_mobile;
 
     static TextView dlast_donation;
-    static TextView dno_of_donation;
+    static TextView dhospital;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
                 replaceAll("0","-").replaceAll("1","+");
         String last_donation=i.getExtras().getString("last_donation");
         Log.v("sex",last_donation);
-        String no_of_donation=i.getExtras().getString("no_of_donation");
+        String hospital=i.getExtras().getString("hospital");
 
         user_mobile=mobile;
 
@@ -50,8 +50,8 @@ public class HomeActivity extends AppCompatActivity {
         demail.setText(email);
         dlast_donation=findViewById(R.id.dlastdonation);
         dlast_donation.setText(last_donation);
-        dno_of_donation=findViewById(R.id.dnoofdonations);
-        dno_of_donation.setText(no_of_donation);
+        dhospital=findViewById(R.id.dhospital);
+        dhospital.setText(hospital);
 
         Button update_donation = findViewById(R.id.update_donation);
         update_donation.setOnClickListener(v->{
@@ -75,6 +75,13 @@ public class HomeActivity extends AppCompatActivity {
         info.setOnClickListener(v->{
             Intent infoIntent=new Intent(v.getContext(),InfoActivity.class);
             startActivity(infoIntent);
+        });
+
+        Button history=findViewById(R.id.history);
+        history.setOnClickListener(v->{
+            Intent histIntent=new Intent(v.getContext(),HistoryActivity.class);
+            histIntent.putExtra("mobile", mobile);
+            startActivity(histIntent);
         });
 
     }

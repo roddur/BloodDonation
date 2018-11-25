@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                                 String mobile=data.getString("mobile");
                                 String blood_group=data.getString("blood_group");
                                 String last_donation=data.getString("last_donation");
-                                String no_of_donation=data.getString("no_of_donation");
+                                String hospital=data.getString("hospital");
                                 Intent i = new Intent(v.getContext(),HomeActivity.class);
                                 i.putExtra("firstname",firstname);
                                 i.putExtra("lastname",lastname);
@@ -100,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                                 i.putExtra("mobile",mobile);
                                 i.putExtra("blood",blood_group);
                                 i.putExtra("last_donation",last_donation);
-                                i.putExtra("no_of_donation",no_of_donation);
+                                i.putExtra("hospital",hospital);
 
                                 startActivity(i);
 

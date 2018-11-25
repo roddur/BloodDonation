@@ -63,7 +63,5 @@ public class DatePickerFragment extends DialogFragment
         }
         new DatabaseTask().execute();
         HomeActivity.dlast_donation.setText(day+"/"+month+"/"+year);
-        String s=Integer.toString(Integer.parseInt(HomeActivity.dno_of_donation.getText().toString())+1);
-        HomeActivity.dno_of_donation.setText(s);
-    }
+     }
 }

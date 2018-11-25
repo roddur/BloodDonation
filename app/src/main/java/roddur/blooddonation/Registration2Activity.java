@@ -49,7 +49,7 @@ public class Registration2Activity extends AppCompatActivity {
                     .replaceAll(Pattern.quote("-"),"0");
             String last_donation = ((EditText) findViewById(R.id.lastdonation)).getText().toString().
                     replaceAll(Pattern.quote("/"),"-");
-            String no_of_donation = ((EditText) findViewById(R.id.no_of_donation)).getText().toString();
+            String hospital = ((EditText) findViewById(R.id.hospital)).getText().toString();
             TextView error=findViewById(R.id.errors);
             if(mobile.equals("") || blood_group.equals("") || last_donation.equals("")){
                 error.setText("*Some of the fields are empty");
@@ -67,7 +67,7 @@ public class Registration2Activity extends AppCompatActivity {
 
             String link = "http://10.0.2.2/BloodDomain/create.php?firstname=" + firstname + "&lastname=" + lastname +
                     "&email=" + email + "&password=" + password + "&date_of_birth=" + date_ofbirth + "&mobile=" + mobile +
-                    "&blood_group=" + blood_group + "&last_donation=" + last_donation + "&no_of_donation=" + no_of_donation;
+                    "&blood_group=" + blood_group + "&last_donation=" + last_donation + "&hospital=" + hospital;
 
             class DatabaseTask extends AsyncTask<Void, Void, Void> {
 
@@ -102,13 +102,15 @@ public class Registration2Activity extends AppCompatActivity {
                             i.putExtra("mobile", mobile);
                             i.putExtra("blood", blood_group);
                             i.putExtra("last_donation", last_donation);
-                            i.putExtra("no_of_donation", no_of_donation);
+                            i.putExtra("hospital", hospital);
 
                             startActivity(i);
 
                         } else {
-                            error.setText("*Sorry, this number is being used");
-                            error.setVisibility(View.VISIBLE);
+                            runOnUiThread(()->{
+                                    error.setText("*Sorry, this number is being used");
+                                    error.setVisibility(View.VISIBLE);
+                            });
                         }
 
                     } catch (Exception e) {

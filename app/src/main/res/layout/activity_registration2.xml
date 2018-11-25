@@ -66,17 +66,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No. of Donation"
+        android:text="Preferred Hospital"
         android:textColor="#CDDEEE"
         android:textIsSelectable="false"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/no_of_donation"
+        android:id="@+id/hospital"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
+        android:ems="10"/>
     
     <TextView
         android:id="@+id/errors"
