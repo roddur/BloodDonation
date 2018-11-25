@@ -12,5 +12,8 @@
 		 WHERE mobile='$mobile'";
 
 	mysqli_query($con ,$sql);
+
+	$sql="INSERT INTO history VALUES('$mobile','$last_donation')";
+	mysqli_query($con, $sql);
 	mysqli_close($con);
 ?>

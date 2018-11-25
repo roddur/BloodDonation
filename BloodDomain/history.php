@@ -5,9 +5,9 @@
       echo "fail" . mysqli_connect_error();
    }
 
-   $blood = $_GET['blood'];
-   $result = mysqli_query($con,"SELECT firstname, lastname, mobile, hospital FROM users 
-	where blood_group='$blood' AND DATEDIFF(CURDATE(), last_donation)>90");
+   $mobile = $_GET['mobile'];
+   $result = mysqli_query($con,"SELECT date FROM history 
+	where mobile='$mobile'");
 
    $data=null;
    while($row = mysqli_fetch_array($result)){

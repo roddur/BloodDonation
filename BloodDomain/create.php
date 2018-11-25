@@ -13,7 +13,7 @@
 	$mobile=$_GET["mobile"];
 	$blood_group=$_GET["blood_group"];
 	$last_donation=$_GET["last_donation"];
-	$nod=$_GET["no_of_donation"];
+	$nod=$_GET["hospital"];
 
 	$sql="select * from users where mobile='$mobile'";
 

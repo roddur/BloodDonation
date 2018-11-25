@@ -71,7 +71,7 @@ public class HistoryActivity extends AppCompatActivity {
                             runOnUiThread(()->{
                                 LinearLayout results2 = findViewById(R.id.results2);
                                 TextView ttv = new TextView(HistoryActivity.this);
-                                ttv.setText("Donated " + array.length()+" times");
+                                ttv.setText("Donated " + array.length()+" time/s");
                                 ttv.setTextColor(Color.WHITE);
                                 results2.addView(ttv);
                             });
